@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a0000 0%, #330000 100%);
+    color: white;
+    overflow: hidden;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+}
+
+#gameCanvas {
+    border: 3px solid #ff6600;
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.5);
+    cursor: crosshair;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+#soulCounter {
+    font-size: 1.5em;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    margin-top: 20px;
+}
+
+#connectWalletBtn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #ff6600, #ff9933);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+    transition: all 0.3s;
+}
+
+#connectWalletBtn:hover {
+    background: linear-gradient(135deg, #ff9933, #ffaa44);
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.8);
+}
+
+#leaderboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff6600;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#leaderboard h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.leaderboard-entry {
+    padding: 5px;
+    color: #00ff00;
+    border-bottom: 1px solid #333;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid #ff6600;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+#gameOver h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#gameOver p {
+    color: #00ff00;
+    margin: 10px 0;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restartBtn:hover {
+    background: #ff9933;
+}
